@@ -17,14 +17,16 @@ while line:
 	
 #count 
 	counter=counter+1
-	print(counter)
 #print output
 #loop for splitting the lines
 	tokens=line.split()
+	print('# sent_id = %d' % (counter))
+	print('# text = %s' % (line.strip())) 
 
 #count tokens
 	tcounter=0
 	for token in tokens:
 		tcounter=tcounter+1
-		print(tcounter,token)
+		print('%d\t%s\t_\t_\t_\t_\t_\t_\t_\t_' %(tcounter,token))
 	line = sys.stdin.readline()
+	print()
